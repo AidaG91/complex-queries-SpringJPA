@@ -1,0 +1,13 @@
+package com.femcoders.pildora.repository;
+
+import com.femcoders.pildora.entity.Article;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.JpaSpecificationExecutor;
+
+import java.util.List;
+
+public interface ArticleRepository
+        extends JpaRepository<Article, Long>, JpaSpecificationExecutor<Article> {
+    List<Article> findByStatus(String status);
+
+}
