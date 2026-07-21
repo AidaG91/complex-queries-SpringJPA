@@ -6,8 +6,6 @@ import org.springframework.data.jpa.repository.JpaSpecificationExecutor;
 
 import java.util.List;
 
-public interface ArticleRepository
-        extends JpaRepository<Article, Long>, JpaSpecificationExecutor<Article> {
-    List<Article> findByStatus(String status);
+public interface ArticleRepository extends JpaRepository<Article, Long>, JpaSpecificationExecutor<Article> {
 
 }
