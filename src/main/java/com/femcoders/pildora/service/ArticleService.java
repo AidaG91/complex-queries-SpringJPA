@@ -16,7 +16,7 @@ public class ArticleService {
     private final ArticleRepository articleRepository;
 
     public List<Article> search(String status, String category, String author) {
-        Specification<Article> spec = ArticleSpecification.build(status, category, author);
+        Specification<Article> spec = Specification.allOf(ArticleSpecification.hasStatus(status), ArticleSpecification.hasCategory(category), ArticleSpecification.hasAuthor(author));
 
         return articleRepository.findAll(spec);
     }
