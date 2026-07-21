@@ -11,6 +11,10 @@ Mostrar cómo:
 * Combinar filtros de forma reutilizable y mantenible.
 * Mantener el código limpio separando la lógica de búsqueda del servicio.
 
+## Presentación
+
+📄 [Ver presentación](docs/SpringDataJPA_Specifications.pdf)
+
 ## Tecnologías utilizadas
 
 * Java 21
